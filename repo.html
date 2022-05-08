@@ -1,11 +1,12 @@
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">		
 		<style>
 			body {
 				font-family: "Arial", sans-serif;
-				background-color: #333;
-				color: #eee;
+				background-color: #333 !important;
+				color: #eee !important;
 			}
 			a:link {
 				color: #68b2e3;
@@ -13,8 +14,11 @@
 			a:visited {
 				color: #7d68e3;
 			}
+			#mainCard {
+				background-color: #444 !important;
+				color: #eee !important;
+			}
 		</style>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">		
 	</head>
 	<body>
 		<div class="row d-flex justify-content-center">
@@ -27,7 +31,7 @@
 					</button>
 				</nav>
 				<br>
-				<div class="card">
+				<div id="mainCard" class="card">
 					<center>
 						<div style="padding: 15px;">
 							<form action="cydia://url/https://cydia.saurik.com/api/share#?source=guzzler829">
