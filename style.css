@@ -14,7 +14,16 @@ footer {
     padding: 2%;
 }
 
-
+#welcomeText {
+    font-size: 48px;
+    text-align: center;
+    padding: 10px;
+    animation: fadeIn 2s ease-in;
+    -webkit-animation: fadeIn 2s ease-in;
+    -moz-animation: fadeIn 2s ease-in;
+    -o-animation: fadeIn 2s ease-in;
+    -ms-animation: fadeIn 2s ease-in;
+}
 
 
 .main-body-light {
@@ -65,7 +74,14 @@ img {
     padding-top: 16px;
 }
 
+.repoButton {
+    padding: 10px;
+}
 
+.socialMediaImagesNoAnimate {
+    position: absolute;
+    opacity: 1;
+}
 
 .socialMediaImages {
     position: absolute;
@@ -92,6 +108,14 @@ img {
     transform: scale(1.15);
 }
 
+.socialMediaImagesNoAnimate img {
+    width: 15%;
+    height: auto;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
 .socialMediaImages img {
     width: 15%;
     height: auto;
@@ -107,17 +131,6 @@ img {
 
 
 
-
-#welcomeText {
-    font-size: 48px;
-    text-align: center;
-    padding: 10px;
-    animation: fadeIn 2s ease-in;
-    -webkit-animation: fadeIn 2s ease-in;
-    -moz-animation: fadeIn 2s ease-in;
-    -o-animation: fadeIn 2s ease-in;
-    -ms-animation: fadeIn 2s ease-in;
-}
 @keyframes fadeIn {
     0% {opacity:0;}
     100% {opacity:1;}

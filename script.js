@@ -42,7 +42,7 @@ function detectMob() {
 
 
 if (detectMob) {
-    mainBody.attr("class", "col-8");
+    mainBody.attr("class", "col-9");
 } else {
     mainBody.attr("class", "col-12");
 }
