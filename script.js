@@ -83,13 +83,4 @@ function darkModeToggle(){
     body[0].classList.toggle("bootstrap-dark");
     toggle *= -1;
     document.cookie = toggle + "\nSameSite=Lax";
-    switch(toggle){
-        case -1:
-            mainBody[0].classList.add("main-body-dark");
-            mainBody[0].classList.remove("main-body-light");
-            break;
-        case 1:
-            mainBody[0].classList.add("main-body-light");
-            mainBody[0].classList.remove("main-body-dark");
-    }
 }

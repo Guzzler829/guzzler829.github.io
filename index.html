@@ -12,13 +12,17 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-print.min.css" />
     <!-- Boostrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <!-- My style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bootstrap">
     <header>
+        <div class="alert alert-primary alert-dismissable fade show" role="alert">
+            This site uses cookies.
+            <button type="button" class="xButton" data-bs-dismiss="alert" aria-label="Close" style="position: absolute; right: 0px; padding-right: 10px;"><img src="img/x.png" width="24px" height="auto"a /></button>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-themed">
             <a class="navbar-brand" href="#">Guzzler829</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +40,7 @@
                         <a class="nav-link" href="https://github.com/Guzzler829/">GitHub Page</a>
                     </li>
                 </ul>
-                <div class="nav-link">Dark mode:</div>
+                <div class="nav-link disabled">Dark mode:</div>
                 <label class="switch nav nav-center">
                     <input id="darkModeSwitch" type="checkbox" onclick="darkModeToggle()">
                     <span class="slider round"></span>

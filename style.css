@@ -8,6 +8,11 @@ main {
     width: 100% !important;
 }
 
+.xButton {
+    background-color: transparent;
+    border: none;
+}
+
 
 #rowOfCards {
     padding-top: 2%;
