@@ -264,15 +264,28 @@ input:checked + .slider:before {
     position: relative;
     margin-left: 50%;
     transform: translateX(-50%);
-    width: 98%
+    width: 98%;
+}
+
+.myJumbotronMobile {
+    width: 80%;
+    overflow: hidden;
+}
+
+.myJumbotronDesktop {
+    height: 420px;
 }
 
 .textContainer {
     display: block;
     position: absolute;
-    overflow: hidden;
+    margin-top: -40px;
+    margin-bottom: -70px;
 }
 
+.textContainerDesktop {
+    transform: translateX(100px);
+}
 
 .textContainerMobile {
     display: block;
@@ -280,8 +293,6 @@ input:checked + .slider:before {
     margin-left: 50%;
     transform: translateX(-50%) translateY(-80px);
 }
-
-
 
 @keyframes fadeEffect {
     to{
@@ -294,8 +305,10 @@ input:checked + .slider:before {
     display: block;
     position: relative;
     margin-left: 50% !important;
-    transform: scale(.66) translateX(45px) !important;
+    margin-top: -120px;
+    transform: scale(.4) !important;
 }
+
 
 .container {
     display: table;

@@ -1,5 +1,6 @@
 let darkModeSwitch = $("#darkModeSwitch");
 let body = $("body");
+let mainBody = $("#main-body");
 let paragraph = $("#exampleParagraph");
 let moreText = $(".moreText");
 let cookie = document.cookie;
@@ -9,6 +10,7 @@ let slideIn = $(".slideIn");
 let socialMediaImages = $(".socialMediaImages");
 let textContainer = $(".textContainer");
 let coffeeContainer = $(".container");
+let myJumbotron = $(".myJumbotron");
 
 var md = new MobileDetect(window.navigator.userAgent);
 
@@ -26,10 +28,14 @@ if (md.is("iPhone") || md.os("AndroidOS")){
     textContainer.attr("class", "textContainer textContainerMobile");
     coffeeContainer.attr("class", "container containerMobile");
     socialMediaImages.attr("class", "socialMediaImages socialMediaImagesMobile")
+    myJumbotron.attr("class", "jumbotron myJumbotron myJumbotronMobile")
 }
 else {
+    mainBody.attr("class", "col-8");
     textContainer.attr("class", "textContainerDesktop");
     coffeeContainer.attr("class", "container containerDesktop");
+    myJumbotron.attr("class", "jumbotron myJumbotron myJumbotronDesktop")
+
 }
 
 function detectMob() {
