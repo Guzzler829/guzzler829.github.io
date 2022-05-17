@@ -1,6 +1,5 @@
 let darkModeSwitch = $("#darkModeSwitch");
 let body = $("body");
-let mainBody = $("#main-body");
 let paragraph = $("#exampleParagraph");
 let moreText = $(".moreText");
 let cookie = document.cookie;
@@ -8,7 +7,10 @@ let toggle = -1;
 
 let slideIn = $(".slideIn");
 let socialMediaImages = $(".socialMediaImages");
+let textContainer = $(".textContainer");
+let coffeeContainer = $(".container");
 
+var md = new MobileDetect(window.navigator.userAgent);
 
 if(cookie){
     toggle = cookie;
@@ -16,35 +18,22 @@ if(cookie){
 
 if(toggle == -1){
     body[0].classList.add("bootstrap-dark");
-    mainBody[0].classList.add("main-body-dark");
     darkModeSwitch.prop("checked", true);
-} else {
-    mainBody[0].classList.add("main-body-light");
 }
 
 
+if (md.is("iPhone") || md.os("AndroidOS")){
+    textContainer.attr("class", "textContainer textContainerMobile");
+    coffeeContainer.attr("class", "container containerMobile");
+    socialMediaImages.attr("class", "socialMediaImages socialMediaImagesMobile")
+}
+else {
+    textContainer.attr("class", "textContainerDesktop");
+    coffeeContainer.attr("class", "container containerDesktop");
+}
 
 function detectMob() {
-    const toMatch = [
-        /Android/i,
-        /webOS/i,
-        /iPhone/i,
-        /iPad/i,
-        /iPod/i,
-        /BlackBerry/i,
-        /Windows Phone/i
-    ];
-    
-    return toMatch.some((toMatchItem) => {
-        return navigator.userAgent.match(toMatchItem);
-    });
-}
-
-
-if (detectMob) {
-    mainBody.attr("class", "col-9");
-} else {
-    mainBody.attr("class", "col-12");
+    return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
 }
 
 //on scroll down, animate revealItems

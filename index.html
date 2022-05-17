@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guzzler829</title>
+    <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-dark.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-print.min.css" />
+    <!-- Boostrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- My style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bootstrap">
@@ -39,102 +45,92 @@
         </nav>
     </header>
     <main>
-        <div class="row d-flex justify-content-center">
-            <div class="col">
-                <!-- This is the left side column. I'm leaving it blank for now -->
+        <div id="main-body">
+            <h1 id="welcomeText">Welcome to Guzzler829's Repo</h1>
+
+            <div class="row justify-content-around aboutRow">
+                <div class="col-9 aboutContainer">
+                    <h3 class="subHeading">
+                        About me:
+                    </h3>
+                    <p>
+                        I love music. I play the guitar, bass guitar, ukulele, bagpipes, and a few other instruments. I love cooking and baking, and I work as a baker. Learning languages has been a favorite passtime of mine, and I speak Esperanto and some German. I'd love to travel to Germany and Austria someday. My dream job is to be a US Senator, but that's probably in the distant future. Someday, I hope to live out west, probably in Colorado. Programming is also a big interest of mine— I've been programming since I was about 10 years old, and lately I've gotten much better at it. I've been making iOS tweaks and webpages lately.
+                    </p>
+                    <p>
+                        Currently (May 2022), I am taking a coding boot camp with <a href="https://www.promineotech.com/">Promineo Tech</a>. I hope to get a job in front-end development sometime soon after I finish the boot camp. So far in the boot camp, I've learned the fundamentals of JavaScript, how to make webpages with HTML, how to style webpages with CSS, Bootstrap, and JQuery. Lately I've been working on CSS animations (see below!) and getting better at using Bootstrap. Soon, I'll be learning to use React.JS. I'm excited to enter the field of front-end development, as I've been enjoying the boot camp quite a bit.
+                    </p>
+                </div>
+                <div class="col">
+                    <div class="imageContainer">
+                        <img src="img/me-and-annie.png" alt="A picture of myself and my dog in front of me." id="meAndAnnie" /><br />
+                        <span class="caption">Me and my dog Annie</span>
+                    </div>
+                </div>
             </div>
-            <div class="col-9" id="main-body">
-
-                <h1 id="welcomeText">Welcome to Guzzler829's Repo</h1>
-
-                <div class="row justify-content-around aboutRow">
-                    <div class="col-8">
-                        <h3 class="subHeading">
-                            About me:
-                        </h3>
-                        <p class="aboutParagraph">
-                            I love music. I play the guitar, bass guitar, ukulele, bagpipes, and a few other instruments. I love cooking and baking, and I work as a baker. Learning languages has been a favorite passtime of mine, and I speak Esperanto and some German. I'd love to travel to Germany and Austria someday. My dream job is to be a US Senator, but that's probably in the distant future. Someday, I hope to live out west, probably in Colorado. Programming is also a big interest of mine— I've been programming since I was about 10 years old, and lately I've gotten much better at it. I've been making iOS tweaks and webpages lately.
+            <div class="jumbotron myJumbotron">
+                <div class="row revealItems">
+                    <div class="col-2" alt="An animation of a coffee cup">
+                        <div class="container" alt="An animation of a coffee cup">
+                            <div class="steamContainer">
+                                <div class="steam steam1"></div>
+                                <div class="steam steam2"></div>
+                                <div class="steam steam3"></div>
+                            </div>
+                            <div class="cup">
+                                <div class="bubbles bubble-1"></div>
+                                <div class="bubbles bubble-2"></div>
+                                <div class="bubbles bubble-3"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col textContainer">
+                        <h1 class="display-4 slideIn">Buy me a coffee?</h1>
+                        <p class="lead moreText">I'd appreciate it greatly.</p>
+                        <hr class="my-4">
+                        <p class="moreText">Thank you for donating. <br /> You can also give to my Cashapp: $guzzler1</p>
+                        <p class="lead jumbotronSubText moreText">
+                            <a class="btn btn-primary btn-lg" href="https://www.buymeacoffee.com/guzzler829" role="button">Buy me a coffee</a>
                         </p>
-                        <p class="aboutParagraph">
-                            Currently (May 2022), I am taking a coding boot camp with <a href="https://www.promineotech.com/">Promineo Tech</a>. I hope to get a job in front-end development sometime soon after I finish the boot camp. So far in the boot camp, I've learned the fundamentals of JavaScript, how to make webpages with HTML, how to style webpages with CSS, Bootstrap, and JQuery. Lately I've been working on CSS animations (see below!) and getting better at using Bootstrap. Soon, I'll be learning to use React.JS. I'm excited to enter the field of front-end development, as I've been enjoying the boot camp quite a bit.
-                        </p>
-                    </div>
-                    <div class="col">
-                        <div class="imageContainer">
-                            <img src="img/me-and-annie.png" alt="A picture of myself and my dog in front of me." id="meAndAnnie" /><br />
-                            <span class="caption">Me and my dog Annie</span>
-                        </div>
                     </div>
                 </div>
-                <div class="jumbotron myJumbotron">
-                    <div class="row revealItems">
-                        <div class="col-3">
-                            <div class="container" alt="An animation of a coffee cup">
-                                <div class="steamContainer">
-                                    <div class="steam steam1"></div>
-                                    <div class="steam steam2"></div>
-                                    <div class="steam steam3"></div>
-                                </div>
-                                <div class="cup">
-                                    <div class="bubbles bubble-1"></div>
-                                    <div class="bubbles bubble-2"></div>
-                                    <div class="bubbles bubble-3"></div>
-                                </div>
-                            </div>            
-                        </div>
-                        <div class="col-9 textContainer">
-                            <h1 class="display-4 slideIn">Buy me a coffee?</h1>
-                            <p class="lead moreText">I'd appreciate it greatly.</p>
-                            <hr class="my-4">
-                            <p class="moreText">Thank you for donating. <br /> You can also give to my cashapp: $guzzler1</p>
-                            <p class="lead jumbotronSubText moreText">
-                                <a class="btn btn-primary btn-lg" href="https://www.buymeacoffee.com/guzzler829" role="button">Buy me a coffee</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="centerText">
-                    <h3 class="subHeading">All my socials:</h3>
-                </div>
-                <div class="row justify-content-around">
-                    <div class="col socialMediaImages">
-                        <div class="centeredContainer">
-                            <a href="https://twitter.com/theguzzler829">
-                                <img src="img/twitter.png" class="img-fluid" /><br />
-                                @theguzzler829
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col socialMediaImages">
-                        <div class="centeredContainer">
-                            <a href="https://www.linkedin.com/in/guzzler/">
-                                <img src="img/linkedin.png" class="img-fluid" /><br />
-                                August Johnson
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col socialMediaImages">
-                        <div class="centeredContainer">
-                            <a href="https://www.reddit.com/user/Guzzler829">
-                                <img src="img/reddit.png" class="img-fluid" /><br />
-                                u/Guzzler829
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
-            <div class="col">
-                <!-- This is the right side column. I'm leaving it blank for now -->
+            <div class="centerText">
+                <h3 class="subHeading">All my socials:</h3>
+            </div>
+            <div class="row justify-content-around socialMediaImagesRow">
+                <div class="col socialMediaImages">
+                    <div class="centeredContainer">
+                        <a href="https://twitter.com/theguzzler829">
+                            <img src="img/twitter.png" class="img-fluid" /><br />
+                            @theguzzler829
+                        </a>
+                    </div>
+                </div>
+                <div class="col socialMediaImages">
+                    <div class="centeredContainer">
+                        <a href="https://www.linkedin.com/in/guzzler/">
+                            <img src="img/linkedin.png" class="img-fluid" /><br />
+                            August Johnson
+                        </a>
+                    </div>
+                </div>
+                <div class="col socialMediaImages">
+                    <div class="centeredContainer">
+                        <a href="https://www.reddit.com/user/Guzzler829">
+                            <img src="img/reddit.png" class="img-fluid" /><br />
+                            u/Guzzler829
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <p>©2022</p> 
+        <p class="centerText">©2022</p> 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Mobile browser detector -->
+    <script src="node_modules/mobile-detect/mobile-detect.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
