@@ -9,14 +9,12 @@ main {
 }
 
 .xButton {
-    background-color: transparent !important;
+    background-color: inherit !important;
     border: none !important;
 }
 
-
-#rowOfCards {
-    padding-top: 2%;
-    padding-bottom: 2%;
+.paragraph {
+    padding-left: 1em;
 }
 
 footer {
