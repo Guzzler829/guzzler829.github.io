@@ -82,7 +82,7 @@ const sleep = (milliseconds) => {
 function darkModeToggle(){
     body[0].classList.toggle("bootstrap-dark");
     toggle *= -1;
-    document.cookie = toggle;
+    document.cookie = toggle + "\nSameSite=Lax";
     switch(toggle){
         case -1:
             mainBody[0].classList.add("main-body-dark");
