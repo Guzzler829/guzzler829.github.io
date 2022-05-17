@@ -1,6 +1,6 @@
 let darkModeSwitch = $("#darkModeSwitch");
 let body = $("body");
-let mainBody = $("#main-body");
+let mainBody = $(".main-body");
 let paragraph = $("#exampleParagraph");
 let moreText = $(".moreText");
 let cookie = document.cookie;
@@ -31,7 +31,7 @@ if (md.is("iPhone") || md.os("AndroidOS")){
     myJumbotron.attr("class", "jumbotron myJumbotron myJumbotronMobile")
 }
 else {
-    mainBody.attr("class", "col-8");
+    mainBody.attr("class", "main-body col-8");
     textContainer.attr("class", "textContainerDesktop");
     coffeeContainer.attr("class", "container containerDesktop");
     myJumbotron.attr("class", "jumbotron myJumbotron myJumbotronDesktop")
