@@ -24,7 +24,7 @@ if(toggle == -1){
 }
 
 
-if (md.is("iPhone") || md.os("AndroidOS")){
+if (md.is("iPhone") || md.is("iPad") || md.os("AndroidOS")){
     textContainer.attr("class", "textContainer textContainerMobile");
     coffeeContainer.attr("class", "container containerMobile");
     socialMediaImages.attr("class", "socialMediaImages socialMediaImagesMobile")
