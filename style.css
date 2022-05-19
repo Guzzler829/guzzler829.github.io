@@ -173,17 +173,17 @@ img {
 }
 
 .card-text {
-    overflow: scroll;
+    overflow: scroll !important;
 }
 
 .card-button {
     position: absolute;
-    bottom: 2.2em;
+    bottom: 20px;
 }
 
 .ukraine-img {
-    height: 430px;
-    width: 430px;
+    height: 620px;
+    width: 620px;
     object-fit: cover;
 }
 
