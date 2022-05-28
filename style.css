@@ -178,8 +178,9 @@ img {
 }
 
 .ukraine-img {
-    height: 620px;
-    width: 620px;
+    height: 600px;
+    width: 600px;
+    overflow: hidden;
     object-fit: cover;
 }
 
