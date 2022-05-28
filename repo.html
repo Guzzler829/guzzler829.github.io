@@ -1,3 +1,5 @@
+<!--  -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,14 +7,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guzzler829</title>
+    <!-- Bootstrap Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-dark.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@forevolve/bootstrap-dark@1.0.0/dist/css/toggle-bootstrap-print.min.css" />
+    <!-- Boostrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- My style -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="bootstrap">
     <header>
+        <div class="alert alert-primary alert-dismissable fade show" role="alert">
+            This site uses cookies.
+            <button type="button" class="xButton" data-bs-dismiss="alert" aria-label="Close" style="position: absolute; right: 0px; padding-right: 10px;"><img src="img/x.png" class="xButton" width="24px" height="auto"a /></button>
+        </div>
         <nav class="navbar navbar-expand-lg navbar-themed">
             <a class="navbar-brand" href="#">Guzzler829</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +42,7 @@
                         <a class="nav-link" href="https://github.com/Guzzler829/">GitHub Page</a>
                     </li>
                 </ul>
-                <div class="nav-link">Dark mode:</div>
+                <div class="nav-link disabled">Dark mode:</div>
                 <label class="switch nav nav-center">
                     <input id="darkModeSwitch" type="checkbox" onclick="darkModeToggle()">
                     <span class="slider round"></span>
@@ -39,71 +51,36 @@
         </nav>
     </header>
     <main>
-        <div class="row d-flex justify-content-center">
-            <div class="col-9" id="main-body">
-
-                <h1 id="welcomeText">Welcome to Guzzler829's Repo</h1>
-
-                <div class="row justify-content-around aboutRow">
-                    <div class="col-9">
-                        <div>
-							<form class="repoButton" action="cydia://url/https://cydia.saurik.com/api/share#?source=guzzler829">
-								<button type="submit" class="btn btn-primary">Click here to add Guzzler829's Repo to Cydia!</button>
-							</form>
-							<form class="repoButton" action="sileo://source/https://guzzler829.github.io/">
-								<button type="submit" class="btn btn-primary">Click here to add Guzzler829's Repo to Sileo!</button>
-							</form>
-							<h3>Tweaks .deb downloads:</h3>	
-							<ul>
-								<li>
-									<a href="https://github.com/Guzzler829/repo/blob/main/debs/com.guzzler.movepagedots2_1.0+debug_iphoneos-arm.deb?raw=true">MovePageDots</a>
-								</li>
-								<br>
-								<li>
-									<a href="https://github.com/Guzzler829/guzzler829.github.io/blob/master/debs/com.guzzler.batterybar_1.0-84+debug_iphoneos-arm.deb?raw=true">BatteryBar</a>
-								</li>
-							</ul>
-						</div>
-						<div class="centerText">
-							<h3 class="subHeading">All my socials:</h3>
-						</div>
-						<div class="row justify-content-around">
-							<div class="col socialMediaImagesNoAnimate">
-								<div class="centeredContainer">
-									<a href="https://twitter.com/theguzzler829">
-										<img src="img/twitter.png" class="img-fluid" /><br />
-										@theguzzler829
-									</a>
-								</div>
-							</div>
-							<div class="col socialMediaImagesNoAnimate">
-								<div class="centeredContainer">
-									<a href="https://www.linkedin.com/in/guzzler/">
-										<img src="img/linkedin.png" class="img-fluid" /><br />
-										August Johnson
-									</a>
-								</div>
-							</div>
-							<div class="col">
-								<div class="centeredContainer socialMediaImagesNoAnimate">
-									<a href="https://www.reddit.com/user/Guzzler829">
-										<img src="img/reddit.png" class="img-fluid" /><br />
-										u/Guzzler829
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+        <div class="row justify-content-center">
+            <div class="main-body">
+                <div class="repos-container">
+                    <form class="repoButton" action="cydia://url/https://cydia.saurik.com/api/share#?source=guzzler829">
+                        <button type="submit" class="btn btn-danger">Click here to add Guzzler829's Repo to Cydia!</button>
+                    </form>
+                    <form class="repoButton" action="sileo://source/https://guzzler829.github.io/">
+                        <button type="submit" class="btn btn-primary">Click here to add Guzzler829's Repo to Sileo!</button>
+                    </form>
+                    <h3>Tweaks .deb downloads:</h3>	
+                    <ul>
+                        <li>
+                            <a href="https://github.com/Guzzler829/repo/blob/main/debs/com.guzzler.movepagedots2_1.0+debug_iphoneos-arm.deb?raw=true">MovePageDots</a>
+                        </li>
+                        <br>
+                        <li>
+                            <a href="https://github.com/Guzzler829/guzzler829.github.io/blob/master/debs/com.guzzler.batterybar_1.0-84+debug_iphoneos-arm.deb?raw=true">BatteryBar</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>©2022</p> 
+        <p class="centerText">©2022</p> 
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Mobile browser detector -->
+    <!-- <script src="node_modules/mobile-detect/mobile-detect.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/mobile-detect@1.4.5/mobile-detect.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
