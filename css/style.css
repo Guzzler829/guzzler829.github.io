@@ -371,7 +371,7 @@ input:checked + .slider:before {
     position: fixed !important;
     width: 30px;
     height: 158px;
-    background: url("img/steam.svg");
+    background: url("../svg/steam.svg");
     background-position: 0 0;
     background-size: 30px;
     background-repeat: no-repeat;
