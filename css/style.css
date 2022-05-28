@@ -406,7 +406,7 @@ input:checked + .slider:before {
     border: 10px solid #030303;
     position: absolute;
     border-radius: 9% 9% 27% 27%;
-    background: url("img/coffee-img-1.svg"),url("img/coffee-img-2.svg");
+    background: url("../svg/coffee-img-1.svg"),url("../svg/coffee-img-2.svg");
     background-position: 0 0, 0 0;
     background-repeat: repeat-x;
     animation: coffee 4s infinite linear;
