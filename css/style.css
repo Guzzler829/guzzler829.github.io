@@ -368,7 +368,7 @@ input:checked + .slider:before {
 
 .steam {
     display: table-cell;
-    position: fixed !important;
+    position: absolute;
     width: 30px;
     height: 158px;
     background: url("../svg/steam.svg");
