@@ -4,7 +4,7 @@ Section: Tweaks
 Maintainer: Guzzler829
 Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.17)
 Architecture: iphoneos-arm
-Filename: ./debs/com.guzzler.batterybar_1.0-84+debug_iphoneos-arm.deb
+Filename: ../debs/com.guzzler.batterybar_1.0-84+debug_iphoneos-arm.deb
 Size: 13850
 Installed-Size: 396
 MD5sum: b1d4ee507c8b6f86cab51baab07135c0
