@@ -1,0 +1,28 @@
+Package: com.guzzler.batterybar
+Version: 1.0-84+debug
+Section: Tweaks
+Maintainer: Guzzler829
+Depends: mobilesubstrate (>= 0.9.5000), ws.hbang.common (>= 1.17)
+Architecture: iphoneos-arm
+Filename: ./debs/com.guzzler.batterybar_1.0-84+debug_iphoneos-arm.deb
+Size: 13850
+Installed-Size: 396
+MD5sum: b1d4ee507c8b6f86cab51baab07135c0
+Description: A bar across the top of the screen showing how much battery is remaining.
+Name: batterybar
+Author: Guzzler829
+
+Package: com.guzzler.movepagedots2
+Version: 1.0-8+debug
+Section: Tweaks
+Maintainer: Guzzler829
+Depends: mobilesubstrate (>= 0.9.5000)
+Architecture: iphoneos-arm
+Filename: ./debs/com.guzzler.movepagedots2_1.0-8+debug_iphoneos-arm.deb
+Size: 9706
+Installed-Size: 408
+MD5sum: b9bb7112251e0508aafc604cae125267
+Description: An awesome MobileSubstrate tweak!
+Name: movepagedots2
+Author: Guzzler829
+
